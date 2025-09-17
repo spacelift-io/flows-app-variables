@@ -10,6 +10,7 @@ import { createDefineBlock } from "./src/defineBlock";
 import { createFlowBlock } from "./src/flowBlock";
 
 export const app = defineApp({
+  autoconfirm: true,
   name: "Variables",
   installationInstructions:
     'The app-level variables and secrets configs are useful for exposing signals from other apps as project-level variables. Example: <p>```"oidcToken": ref("signal.oidcToken.token")```</p>',
